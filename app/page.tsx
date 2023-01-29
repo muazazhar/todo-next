@@ -10,11 +10,9 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import AddRodo from "./addRodo";
-import TodoList from "./todoList";
 
 function Home() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<string[]>([]);
   const [value, setValue] = useState("");
 
   const handleInput = () => {
